@@ -9,9 +9,9 @@ Install the libraries: `pip install -r requirements.txt`
 
 ## Inference using detect.py
 
-Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/.
+Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/. Instead of specifying `yolov5x.pt` path to other model weights can be provided.
 
-`python detect.py --weights <weights-path> --source <video-path> --classes 0`
+`python detect.py --weights yolov5x.pt --source <video-path> --classes 0`
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentation on training, testing and deployment.
 
