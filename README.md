@@ -13,13 +13,17 @@ Weights will automatically be downloaded when the following command is run. The 
 
 `python detect.py --weights <weights-path> --source <video-path> --classes 0`
 
+See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentation on training, testing and deployment.
+
 ## OpenVINO Optimization
 
 Convert the model weights to OpenVINO IR format(.xml and .bin).
 
 `python export.py --weigths <weights-path> --include openvino`
 
-Run inference using the converted weights. The path `<folder-path>` is the path to folder consisting .xml and .bin files.
+Run inference using the converted weights. The path `<folder-path>` is the path to the folder consisting .xml and .bin files.
+
+See the [OpenVINO Docs](https://docs.openvino.ai/2022.3/notebooks/226-yolov7-optimization-with-output.html#verify-model-inference) for conversion and optimization.
 
 `python detect.py --weights <folder-path> --source <video-path> --classes 0`
 
