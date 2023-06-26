@@ -1,6 +1,6 @@
 # Social-Distancing-Detection-using-Computer-Vision
 
-Detecting compliance of social distancing using Computer Vision and Deep Learning using YOLO v5 (yolov5x).
+Detecting compliance of social distancing using Computer Vision and Deep Learning using YOLO v5 (yolov5x). The model is pre-trained on COCO dataset for 80 classes.
 
 ## Setting up the environment
 Create a virtual environment: `python -m venv <env-path>`
