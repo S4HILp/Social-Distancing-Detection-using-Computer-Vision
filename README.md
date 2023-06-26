@@ -9,7 +9,7 @@ Install the libraries: `pip install -r requirements.txt`
 
 ## Inference using detect.py
 
-Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people,
+Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/.
 
 `python detect.py --weights <weights-path> --source <video-path> --classes 0`
 
