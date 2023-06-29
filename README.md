@@ -9,7 +9,7 @@ Install the libraries: `pip install -r requirements.txt`
 
 ## Inference using detect.py
 
-Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/. Instead of specifying `yolov5x.pt` path to other model weights can be provided.
+Weights to downloaded are given below or they automatically will be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/. Instead of specifying `yolov5x.pt` path to other model weights can be provided.
 
 `python ./code/detect.py --weights yolov5x.pt --source <video-path> --classes 0`
 
@@ -43,6 +43,8 @@ Run inference using the converted weights. The path `<folder-path>` is the path 
 See the [OpenVINO Docs](https://docs.openvino.ai/2022.3/notebooks/226-yolov7-optimization-with-output.html#verify-model-inference) for conversion and optimization.
 
 `python ./code/detect.py --weights <folder-path> --source <video-path> --classes 0`
+
+#### Weights: [YOLOV5x weights](https://drive.google.com/file/d/1yAqbr7ijYVVXaP5QRpnyMIScr2JoAq_W/view?usp=sharing)
 
 ## Results
 
