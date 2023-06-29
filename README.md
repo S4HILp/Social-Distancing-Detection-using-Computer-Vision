@@ -5,13 +5,13 @@ Detecting compliance of social distancing using Computer Vision and Deep Learnin
 ## Setting up the environment
 Create a virtual environment: `python -m venv <env-path>`
 
-Install the libraries: `pip install -r ./code/requirements.txt`
+Install the libraries: `pip install -r .\code\requirements.txt`
 
 ## Inference using detect.py
 
 Weights to downloaded are given below or they automatically will be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/. Instead of specifying `yolov5x.pt` path to other model weights can be provided.
 
-`python ./code/detect.py --weights yolov5x.pt --source <video-path> --classes 0`
+`python .\code\detect.py --weights yolov5x.pt --source <video-path> --classes 0`
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentation on training, testing and deployment.
 
@@ -36,13 +36,13 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentati
 
 Convert the model weights to OpenVINO IR format(.xml and .bin).
 
-`python ./code/export.py --weigths <weights-path> --include openvino`
+`python .\code\export.py --weigths <weights-path> --include openvino`
 
 Run inference using the converted weights. The path `<folder-path>` is the path to the folder consisting .xml and .bin files.
 
 See the [OpenVINO Docs](https://docs.openvino.ai/2022.3/notebooks/226-yolov7-optimization-with-output.html#verify-model-inference) for conversion and optimization.
 
-`python ./code/detect.py --weights <folder-path> --source <video-path> --classes 0`
+`python .\code\detect.py --weights <folder-path> --source <video-path> --classes 0`
 
 #### Weights: [YOLOV5x weights](https://drive.google.com/file/d/1yAqbr7ijYVVXaP5QRpnyMIScr2JoAq_W/view?usp=sharing)
 
