@@ -5,7 +5,7 @@ Detecting compliance of social distancing using Computer Vision and Deep Learnin
 ## Setting up the environment
 Create a virtual environment: `python -m venv <env-path>`
 
-Install the libraries: `pip install -r requirements.txt`
+Install the libraries: `pip install -r ./code/requirements.txt`
 
 ## Inference using detect.py
 
