@@ -11,7 +11,7 @@ Install the libraries: `pip install -r requirements.txt`
 
 Weights will automatically be downloaded when the following command is run. The `--classes` tag is used to detect only people. The results of inference will be stored under runs/detect/. Instead of specifying `yolov5x.pt` path to other model weights can be provided.
 
-`python detect.py --weights yolov5x.pt --source <video-path> --classes 0`
+`python ./code/detect.py --weights yolov5x.pt --source <video-path> --classes 0`
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentation on training, testing and deployment.
 
@@ -36,13 +36,13 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com/yolov5/) for full documentati
 
 Convert the model weights to OpenVINO IR format(.xml and .bin).
 
-`python export.py --weigths <weights-path> --include openvino`
+`python ./code/export.py --weigths <weights-path> --include openvino`
 
 Run inference using the converted weights. The path `<folder-path>` is the path to the folder consisting .xml and .bin files.
 
 See the [OpenVINO Docs](https://docs.openvino.ai/2022.3/notebooks/226-yolov7-optimization-with-output.html#verify-model-inference) for conversion and optimization.
 
-`python detect.py --weights <folder-path> --source <video-path> --classes 0`
+`python ./code/detect.py --weights <folder-path> --source <video-path> --classes 0`
 
 ## Results
 
